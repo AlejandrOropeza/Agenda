@@ -17,7 +17,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\nIngrese la opción deseada:");
+            System.out.println("Ingrese la opción deseada:");
             System.out.println("1. Agregar entrada");
             System.out.println("2. Eliminar entrada");
             System.out.println("3. Mostrar todas las entradas");
@@ -26,13 +26,15 @@ public class Main {
             int opcion = scanner.nextInt();
 
             switch (opcion) {
+                 
                 case 1:
+                    scanner.nextLine();
                     System.out.println("Ingrese el nombre: ");
-                    String nombre = scanner.next();
+                    String nombre = scanner.nextLine();
                     System.out.println("Ingrese el teléfono: ");
-                    String telefono = scanner.next();
+                    String telefono = scanner.nextLine();
                     System.out.println("Ingrese la dirección: ");
-                    String direccion = scanner.next();
+                    String direccion = scanner.nextLine();
                     miAgenda.agregarEntrada(nombre, telefono, direccion);
                     break;
                 case 2:
